@@ -11,8 +11,7 @@
     "uglifyjs-webpack-plugin": "^1.1.4",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7",
-    "webpack-merge": "^4.1.1",
-    "postinstall": "haxelib --always install build.hxml"
+    "webpack-merge": "^4.1.1"
   },
   "scripts": {
     "build": "npm run build:prod",
@@ -20,7 +19,8 @@
     "build:prod": "webpack --config webpack.prod.js",
     "start": "npm run start:dev",
     "start:dev": "webpack-dev-server --open --config webpack.dev.js",
-    "start:prod": "webpack-dev-server --open --config webpack.prod.js"
+    "start:prod": "webpack-dev-server --open --config webpack.prod.js",
+    "postinstall": "haxelib --always install build.hxml"
   },
   "dependencies": {}
 }
