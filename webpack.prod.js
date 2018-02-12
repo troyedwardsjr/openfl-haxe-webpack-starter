@@ -8,7 +8,9 @@ module.exports = merge (common, {
 	plugins: [
 		new UglifyJSPlugin ({
 			sourceMap: true,
-			mangle: true
+			uglifyOptions: {
+				mangle: true
+			}
 		}),
 		new webpack.DefinePlugin ({
 			'process.env.NODE_ENV': JSON.stringify ('production')
